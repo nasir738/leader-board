@@ -112,7 +112,14 @@ hr{
 .fa-star.empty{
     color: #AEAEAE;
 }
-
+.course-duration a {
+    background-color: #FFE4E8;
+    width: 95px;
+    height: 24px;
+    text-align: center;
+    border-radius: 14px;
+    color: #FF4A60;
+}
 /* mobile devices */
 @media only screen and (max-width:688px) {
     .container{
