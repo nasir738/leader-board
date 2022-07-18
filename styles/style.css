@@ -1,0 +1,150 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* top players style */
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #ffffff;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+/* top players style */
+.top-players{
+    margin-bottom: 30px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/*Top blogs */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:26px;
+    grid-column-gap:46px ;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+/* ----lates--courses */
+.multy-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:24px ;
+}
+.courses{
+    Width:252.42px;
+    Height:269.79px;
+}
+.courses .course-banner img {
+    width: 244px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .player{
+        flex-direction: column;
+    }
+    /* pup */
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .multy-courses{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .curses{
+        grid-row-gap:30px;
+    }
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
